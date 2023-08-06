@@ -7,42 +7,91 @@
     <link rel="stylesheet" href="style.css"> <!--this is to link css-->
     <title>Jaden_222655K_A2</title>
 </head>
-<body>
-    <script src="script.js"></script>
+<body >
 <header>
     <h1>The basics of Music</h1>
 </header>
+
 <button id="hamIcon" class="button"><img src="images/HamburgerMenu2.png" alt="burger"></button>
 <nav> <!--menu systtm-->
-<ul>
-    <li><button id="page1btn"class="button"> What are Time Signature</button></li>
-    <li><button id="page2btn"class="button">How to read notes</button></li>
-    <li><button id="page3btn"class="button">How to count notes</button></li>
-</ul>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><button id="page1btn" class="glow-button">What are Time Signatures</button></li>
+                <li><button id="page2btn" class="glow-button">How to Read Notes</button></li>
+                <li><button id="page3btn" class="glow-button">How to Count Notes</button></li>
+            </ul>
+        </nav>
+    </div>
 </nav>
-<div id="pagecontainer">
+<div id="pagecontainer" >
     <div class="page" id="page1">
-        <h2>What is a time signature?</h2>     
-        <p>A time signature is an indication of how many beats are in each measure of music, as well as which note value is counted as a beat</p>
-        <img src="images/Time-Signature.jpg" alt="CMajor">
+        <h2>Guide To Time Signatures In Music</h2>
+        <div class="Layout">
+            <p class = "text ">A time signature is an indication of how many beats are in each measure of music, as well as which note value is counted as a beat</p>
+            <img class = "image "src="images/Time-Signature.jpg" alt="Time-Signature">
+        </div>
+        <p>Time signature is typically represented by two stacked numbers (like a fraction). The top number is the number of beats in a measure and the bottom number is the note value that represents one beat.</p>
+        <h2>There are 3 types of Time Signatures</h2>
+        <p>1. Simple: The most common types of simple time signatures are 2/4, 3/4, 4/4, and 2/2. Sometimes the letter “C” (meaning common time) will be used in place of 4/4. Both C and 4/4 indicate that there are four quarter note beats in each measure. For 2/4 and 3/4, there are two and three quarter note beats per measure, respectively.</p>
+        <p>2. Compound: Common compound time signatures include 9/4, 6/8, and 12/8. The beat of a piece of music with a compound time signature is broken into a three-part rhythm. In each of the cases above, quarter or eighth notes are combined in multiples of three.</p>
+        <p>3. Complex: Complex time signatures are more common in music written after the nineteenth century. Complex time signatures don't follow typical duple or triple meters. Examples of complex time signatures include: 5/4, 11/4, and 7/8.</p>
     </div>
     <div class="page" id="page2">
         <h2>What is a musical note?</h2>
         <p>A note is a name given to a specific audio vibration.Click on the notes to hear their sounds!!</p>
             
         <img src="images/MusicNotes.png" alt="CMajor">
+        <p>
+            Each line and space of the staff correspond to a musical pitch, which is determined by the clef. 
+            Music notes are named after the first seven letters of the alphabet: A, B, C, D, E, F, G. 
+            The two clefs that are primarily used are the treble clef and bass clef.</p>
+        <div class="Layout">
+            <p  class = "text hidden hiddenText">The treble clef is also known as the ‘G-clef’.</p>
+            <button class="showTextButton"><img class = "image "src="images/TrebleCelf.jpg" alt="TrebleCelf"></button>
+        </div>
+        <div class="Layout2">
+            <button class="showTextButton"><img class = "image "src="images/BassCelf.jpg" alt="BassCelf"></button>
+            <p class = "text hidden hiddenText">The bass clef is also known as the ‘F-Clef’</p>
+        </div>
+        <p>Ledger lines are used to notate pitches below or above the regular lines and spaces of the staff. ‘Middle C’, 
+            one of the first notes beginning music students learn, is located on a ledger line between the bass clef and treble clef staffs. 
+            You can see how it is notated in both of these clefs in the examples below.</p>
     </div>
     <div class="page" id="page3">
         <h2>Beats of a note</h2>
         <p>
             In a song there are each note is held for different amount of time, so how would one tell the difference for how long a note is suppose to be held??
-Well there notes with different beats are written in a different way!
+            <br>
+            Well there notes with different beats are written in a different way!
         </p>
         
         <img src="images/NoteCount.png" alt="noteCount">
-        
+        <p>In sheet music notation,
+             the note value or relative duration of a note is indicated by three basic components: the color of the note head, 
+             sthe presence or absence of a stem, and the presence or absence of flags or beams. Each type of note value also has a companion symbol, called a rest, 
+            that tells the player not to play for the same duration as the note value.
+        </p>
 
+        <p>
+            The whole note is equal to four beats in 4/4 time 
+            (see time signature in other tab)
+        </p>
 
+        <img src="images/dotted-half-and-quarter.png" alt="HalfNote">
+
+        <p>When you see a dot after any note value, it means you need to add one-half the value of that note’s duration.</p>
     </div>
+
 </div>
+
+<footer>
+    <div class = "nav-container">
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCRurkidoka8Rj6hEQB3sh5w"target="_blank">Youtube</a></li>
+
+        </ul> 
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
